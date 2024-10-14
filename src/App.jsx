@@ -1,6 +1,7 @@
 import './App.css';
 import ConditionRendering from './components/conditionalRendering/conditionRendering';
 import UserProfile from './components/conditionalRendering/userProfile';
+import ProductAvailability from './components/conditionalRendering/productAvailability';
 
 function App() {
   return (
@@ -11,9 +12,12 @@ function App() {
         <h2>Conditional rendering:</h2>
         <ConditionRendering />
         <UserProfile />
+        <ProductAvailability />
       </div>
     </>
   );
 }
 
 export default App;
+
+
