@@ -1,5 +1,6 @@
 import './App.css';
 import ConditionRendering from './components/conditionalRendering/conditionRendering';
+import UserProfile from './components/conditionalRendering/userProfile';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <div className='conditional-rendering'>
         <h2>Conditional rendering:</h2>
         <ConditionRendering />
+        <UserProfile />
       </div>
     </>
   );

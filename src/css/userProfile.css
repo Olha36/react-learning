@@ -1,0 +1,9 @@
+.login-container {
+  width: 300px;
+  height: 300px;
+  box-shadow: 1px 3px 15px 7px grey;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
