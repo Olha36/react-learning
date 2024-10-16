@@ -2,6 +2,7 @@ import './App.css';
 import ConditionRendering from './components/conditionalRendering/conditionRendering';
 import UserProfile from './components/conditionalRendering/userProfile';
 import ProductAvailability from './components/conditionalRendering/productAvailability';
+import FormValidation from './components/conditionalRendering/formValidation';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <ConditionRendering />
         <UserProfile />
         <ProductAvailability />
+        <FormValidation />
       </div>
     </>
   );
