@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import ConditionRendering from '../components/conditionalRendering/conditionRendering';
 import FormValidation from '../components/conditionalRendering/formValidation';
 import ProductAvailability from './Product';
+import UserProfile from '../components/conditionalRendering/userProfile';
 
 export default function Home() {
   const navigate = useNavigate();
@@ -12,11 +13,13 @@ export default function Home() {
     navigate('/weather');
     navigate('/form');
     navigate('/product');
+    navigate('/profile');
     return (
       <>
         <ConditionRendering />
         <FormValidation />
         <ProductAvailability />
+        <UserProfile />
       </>
     );
   };
@@ -28,7 +31,8 @@ export default function Home() {
 
       <button onClick={handleExerciseClick}>Click to see a weather exercise</button>
       <button onClick={handleExerciseClick}>Click to see a form validation exercise</button>
-      <button onClick={handleExerciseClick}>Click to see a  product availability exercise</button>
+      <button onClick={handleExerciseClick}>Click to see a product availability exercise</button>
+      <button onClick={handleExerciseClick}>Click to see a user profile exercise</button>
     </>
   );
 }

@@ -6,6 +6,7 @@ import Form from './pages/Form';
 import Home from './pages/Home';
 import Weather from './pages/Weather';
 import Product from './pages/Product';
+import UserProfile from './components/conditionalRendering/userProfile';
 function App() {
   return (
     <>
@@ -27,6 +28,7 @@ function App() {
             <Route path='/weather' element={<Weather />} />
             <Route path='/form' element={<Form />} />
             <Route path='/product' element={<Product />} />
+            <Route path='/profile' element={<UserProfile />} />
           </Routes>
         </BrowserRouter>
       </div>
