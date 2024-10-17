@@ -1,13 +1,11 @@
 import './App.css';
-// import ConditionRendering from './components/conditionalRendering/conditionRendering';
-// import UserProfile from './components/conditionalRendering/userProfile';
-// import ProductAvailability from './components/conditionalRendering/productAvailability';
-// import FormValidation from './components/conditionalRendering/formValidation';
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Home } from './pages';
-import { About } from './pages';
-import { Contact } from './pages';
-// import Weather from './pages/About';
+import '../src/css/home.css';
+import Form from './pages/Form';
+import Home from './pages/Home';
+import Weather from './pages/Weather';
+import Product from './pages/Product';
 function App() {
   return (
     <>
@@ -26,8 +24,9 @@ function App() {
           <Routes>
             <Route index element={<Home />} />
             <Route path='/home' element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/contact' element={<Contact />} />
+            <Route path='/weather' element={<Weather />} />
+            <Route path='/form' element={<Form />} />
+            <Route path='/product' element={<Product />} />
           </Routes>
         </BrowserRouter>
       </div>
