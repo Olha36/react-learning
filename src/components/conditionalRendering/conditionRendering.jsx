@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { IoIosCloudy, IoIosRainy, IoIosSunny } from 'react-icons/io';
 import { RiSnowyFill } from 'react-icons/ri';
 import '../../css/conditionRendering.css';
+import { FaHome } from "react-icons/fa";
 
 export default function ConditionRendering() {
   let [weather, setWeather] = useState('');
@@ -10,6 +11,7 @@ export default function ConditionRendering() {
   };
   return (
     <>
+    <FaHome />
       <p>What is the weather like today?</p>
       <div className='weather-container'>
         <div className='sunny box'>

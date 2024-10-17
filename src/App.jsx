@@ -1,25 +1,14 @@
-import './App.css';
-
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import '../src/css/home.css';
+import './App.css';
+import UserProfile from './components/conditionalRendering/userProfile';
 import Form from './pages/Form';
 import Home from './pages/Home';
-import Weather from './pages/Weather';
 import Product from './pages/Product';
-import UserProfile from './components/conditionalRendering/userProfile';
+import Weather from './pages/Weather';
 function App() {
   return (
     <>
-      {/* <h1>React learning</h1>
-
-      <div className='conditional-rendering'>
-        <h2>Conditional rendering:</h2>
-        <ConditionRendering />
-        <UserProfile />
-        <ProductAvailability />
-        <FormValidation />
-      </div> */}
-
       <div>
         <BrowserRouter>
           <Routes>
