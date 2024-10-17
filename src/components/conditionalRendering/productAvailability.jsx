@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import { FaHome } from 'react-icons/fa';
 export default class ProductAvailability extends Component {
   constructor(props) {
     super(props);
@@ -18,17 +19,23 @@ export default class ProductAvailability extends Component {
     const { isAvailable } = this.state;
     if (isAvailable) {
       return (
-        <div className='product-availability'>
-          <p>Product is available</p>
-          <button onClick={this.handleButtonClick}>Add to cart</button>
-        </div>
+        <>
+          <FaHome />
+          <div className='product-availability'>
+            <p>Product is available</p>
+            <button onClick={this.handleButtonClick}>Add to cart</button>
+          </div>
+        </>
       );
     } else {
       return (
-        <div className='product-availability'>
-          <p>Product is unavailable</p>
-          <button onClick={this.handleButtonClick}>Notify when the product appears</button>
-        </div>
+        <>
+          <FaHome />
+          <div className='product-availability'>
+            <p>Product is unavailable</p>
+            <button onClick={this.handleButtonClick}>Notify when the product appears</button>
+          </div>
+        </>
       );
     }
   }
