@@ -5,7 +5,7 @@
 // If the password is too short, display "Password must be at least 8 characters."
 // Display a "Submit" button, and when all validations pass, display a success message like "Sign up successful."
 import { Component } from 'react';
-import { FaHome } from 'react-icons/fa';
+import ReturnHome from './ReturnHome';
 import '../../css/formValidation.css';
 
 export default class FormValidation extends Component {
@@ -55,7 +55,7 @@ export default class FormValidation extends Component {
   render() {
     return (
       <>
-        <FaHome />
+           <ReturnHome />
         <div className='form-validation'>
           <h3>Sign up</h3>
           <form onSubmit={this.handleSubmit}>

@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { FaHome } from 'react-icons/fa';
+import ReturnHome from './ReturnHome';
 export default class ProductAvailability extends Component {
   constructor(props) {
     super(props);
@@ -20,7 +20,7 @@ export default class ProductAvailability extends Component {
     if (isAvailable) {
       return (
         <>
-          <FaHome />
+            <ReturnHome />
           <div className='product-availability'>
             <p>Product is available</p>
             <button onClick={this.handleButtonClick}>Add to cart</button>
@@ -30,7 +30,7 @@ export default class ProductAvailability extends Component {
     } else {
       return (
         <>
-          <FaHome />
+           <ReturnHome />
           <div className='product-availability'>
             <p>Product is unavailable</p>
             <button onClick={this.handleButtonClick}>Notify when the product appears</button>

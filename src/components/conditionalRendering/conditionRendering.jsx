@@ -2,16 +2,17 @@ import { useState } from 'react';
 import { IoIosCloudy, IoIosRainy, IoIosSunny } from 'react-icons/io';
 import { RiSnowyFill } from 'react-icons/ri';
 import '../../css/conditionRendering.css';
-import { FaHome } from "react-icons/fa";
+import ReturnHome from './ReturnHome';
 
 export default function ConditionRendering() {
   let [weather, setWeather] = useState('');
   const handleClick = (e) => {
     setWeather(e.target.innerText);
   };
+
   return (
     <>
-    <FaHome />
+      <ReturnHome />
       <p>What is the weather like today?</p>
       <div className='weather-container'>
         <div className='sunny box'>
@@ -30,8 +31,6 @@ export default function ConditionRendering() {
           <RiSnowyFill />
           <button onClick={handleClick}>Snowy</button>
         </div>
-
-     
       </div>
       <p>The weather is {weather}</p>
     </>

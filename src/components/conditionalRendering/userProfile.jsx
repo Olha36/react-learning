@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { FaHome } from 'react-icons/fa';
+import ReturnHome from './ReturnHome';
 import '../../css/userProfile.css';
 export default class UserProfile extends Component {
   constructor(props) {
@@ -20,7 +20,7 @@ export default class UserProfile extends Component {
     const { isLogged } = this.state;
     return (
       <>
-        <FaHome />
+          <ReturnHome />
         <div className='login-container'>
           {isLogged ? (
             <>

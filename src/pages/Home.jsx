@@ -1,6 +1,5 @@
 // import ConditionRendering from '../components/conditionalRendering/conditionRendering';
 import { useNavigate } from 'react-router-dom';
-import Header from '../components/Header';
 import Weather from '../components/conditionalRendering/conditionRendering';
 import FormValidation from '../components/conditionalRendering/formValidation';
 import ProductAvailability from '../components/conditionalRendering/productAvailability';
@@ -47,7 +46,6 @@ export default function Home() {
 
   return (
     <>
-      <Header />
       <h2>Home Page</h2>
       {/* <ConditionRendering /> */}
 
