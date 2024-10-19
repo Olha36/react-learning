@@ -46,13 +46,13 @@ export default function Home() {
 
   return (
     <>
-      <h2>Home Page</h2>
-      {/* <ConditionRendering /> */}
-
-      <button onClick={handleWeatherExerciseClick}>Click to see a weather exercise</button>
-      <button onClick={handleFormExerciseClick}>Click to see a form validation exercise</button>
-      <button onClick={handleProductExerciseClick}>Click to see a product availability exercise</button>
-      <button onClick={handleProfileExerciseClick}>Click to see a user profile exercise</button>
+      <h2>Exercises</h2>
+      <div className='button-container'>
+        <button onClick={handleWeatherExerciseClick}>Click to see a weather exercise</button>
+        <button onClick={handleFormExerciseClick}>Click to see a form validation exercise</button>
+        <button onClick={handleProductExerciseClick}>Click to see a product availability exercise</button>
+        <button onClick={handleProfileExerciseClick}>Click to see a user profile exercise</button>
+      </div>
     </>
   );
 }
